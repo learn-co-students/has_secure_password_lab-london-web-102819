@@ -1,0 +1,14 @@
+<h2>Login here:</h2>
+
+<%= form_tag("/login") do %>
+
+    Name: <%= text_field_tag :name%><br>
+    Password: <%= text_field_tag :password%><br>
+
+    <%= submit_tag :Login%>
+
+<% end %>
+
+<br>
+
+<%= link_to("New User", new_user_path)%>
